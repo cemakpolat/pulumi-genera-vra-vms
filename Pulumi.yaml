@@ -1,0 +1,15 @@
+name: org
+description: server development environment
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python
+  
+  vra:url: https://vra.lab.server.de
+  vra:insecure: true
+  vra:refresh_token: ""
